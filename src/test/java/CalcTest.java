@@ -1,7 +1,7 @@
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-        //Created by Maurice Russ on 2/2/2020
+        //Created by Maurice Russ on 2/2/2020  
 public class CalcTest {
 
     //Default constructor for class CalcTest
