@@ -15,25 +15,33 @@ public class Console {
         print(output + "\n", args);
     }
 
-    public static void String getStringInput(String prompt)
+    public static  String getStringInput(String prompt)
     {
         Scanner username = new Scanner(System.in);
         println (prompt);
         String user = username.nextLine();
         System.out.println("Hello " + user + " !");
-
+        return user;
     }
 
-    public static void Integer getIntegerInput(String prompt)
+    public static  Integer getIntegerInput(String prompt)
     {
         Scanner number = new Scanner(System.in);
         println (prompt);
-        Integer num = number.nextint();
-        System.out.println("Hello " + user + " !");
-
-
-
+        Integer num = number.nextInt();
+        return num;
     }
+
+    public static  String getOperationInput(String prompt)
+    {
+        Scanner operation = new Scanner(System.in);
+        println (prompt);
+        String ops = operation.nextLine();
+        return ops;
+    }
+
+
+
 
 
 
