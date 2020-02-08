@@ -8,89 +8,83 @@ import java.util.Scanner;
 public class MainApplication {
     public static void main(String[] args) {
 
-        int display = 0;
 
         Features f = new Features();
 
         Console.println("Welcome to my calculator!");
 
         String s = Console.getStringInput(" Please enter your name?");
-        Integer i = Console.getIntegerInput( "Please enter a number:");
-        String op = Console.getOperationInput("Enter an operation : +, - , *, /, ^2, ^y, 1/x, sqrt : ");
 
-        if (op.equals("+"))
+        int display = 0;
+        Console.println("Current number is :" + display);
+
+        Integer i = Console.getIntegerInput("Please enter a number:");
+
+        for (int u = 0; u < 10000; u++)
         {
-            Integer i1 = Console.getIntegerInput( "Please next number:");
-            Console.println(f.add(i,i1));
-        }
-        else if (op.equals("-"))
-        {
-            Integer i1 = Console.getIntegerInput( "Please next number:");
-            Console.println(f.subtract(i,i1));
-        }
-        else if (op.equals("*"))
-        {
-            Integer i1 = Console.getIntegerInput( "Please next number:");
-            Console.println(f.multiply(i,i1));
-        }
-        else if (op.equals("/"))
-        {
-            Integer i1 = Console.getIntegerInput( "Please next number:");
-            Console.println(f.divide(i,i1));
-        }
-        else if (op.equals("^y"))
-        {
-            Integer i1 = Console.getIntegerInput( "Please next number:");
-            Console.println(f.exponent(i,i1));
-        }
-        else if (op.equals("/"))
-        {
-            Integer i1 = Console.getIntegerInput( "Please next number:");
-            Console.println(f.divide(i,i1));
-        }
-        else if (op.equals("^2"))
-        {
-            Console.println(f.square(i,i1));
-        }
-        else if (op.equals("sqrt"))
-        {
-            Console.println(f.root(i,i1));
-        }
-        else if (op.equals("inverse"))
-        {
-            Console.println(f.inverse(i,i1));
-        }
-        else if (op.equals("invert"))
-        {
-            Console.println(f.invert(i,i1));
-        }
-        else if (op.equals("c"))
-        {
-            Console.println(clear());
-        }
-        else
-        {
-            Console.println("Err");
-        }
+
+
+            String op = Console.getOperationInput("Enter an operation : +, - , *, /, ^2, ^y, inverse, sqrt, invert, c, end : ");
+
+            if (op.equals("+")) {
+                Integer i1 = Console.getIntegerInput("Please next number:");
+                Console.println("New Value is: " + f.add(i, i1));
 
 
 
-        //Scanner username = new Scanner(System.in);
-        //String user = username.nextLine();
-        //System.out.print("Hello " + user + " !");
+            } else if (op.equals("-")) {
+                Integer i1 = Console.getIntegerInput("Please next number:");
+                Console.println("New Value is:" + f.subtract(i, i1));
+            } else if (op.equals("*")) {
+                Integer i1 = Console.getIntegerInput("Please next number:");
+                Console.println("New Value is:" + f.multiply(i, i1));
+            } else if (op.equals("/"))
+            {
+                    Integer i1 = Console.getIntegerInput("Please next number:");
+                        Console.println("New Value is:" + f.divide(i, i1));
+
+            } else if (op.equals("^y")) {
+                Integer i1 = Console.getIntegerInput("Please next number:");
+                Console.println("New Value is:" + f.exponent(i, i1));
+            } else if (op.equals("/")) {
+                Integer i1 = Console.getIntegerInput("Please next number:");
+                Console.println("New Value is:" + f.divide(i, i1));
+            } else if (op.equals("^2")) {
+                Console.println("New Value is:" + f.square(i));
+            } else if (op.equals("sqrt")) {
+                Console.println("New Value is:" + f.root(i));
+            } else if (op.equals("inverse")) {
+                Console.println("New Value is:" + f.inverse(i));
+            } else if (op.equals("invert")) {
+                Console.println("New Value is:" + f.invert(i));
+            } else if (op.equals("c")) {
+                Console.println("New Value is:" + f.clear());
+            } else if (op.equals("end"))
+            {
+                  u = 1000000;
+                }
+             else {
+                Console.println("Err");
+            }
 
 
-        //Integer i = Console.getIntegerInput("Enter a number");
-        //Scanner number = new Scanner(System.in);
-        //int
+            //Scanner username = new Scanner(System.in);
+            //String user = username.nextLine();
+            //System.out.print("Hello " + user + " !");
 
 
-        //String s = Console.getStringInput("Enter a string");
-        //Integer i = Console.getIntegerInput("Enter an integer");
-        //Double d = Console.getDoubleInput("Enter a double.");
+            //Integer i = Console.getIntegerInput("Enter a number");
+            //Scanner number = new Scanner(System.in);
+            //int
 
-        //Console.println("Hello" + s);
-        //Console.println("The user input %s as a integer", i);
-        //Console.println("The user input %s as a d", d);
+
+            //String s = Console.getStringInput("Enter a string");
+            //Integer i = Console.getIntegerInput("Enter an integer");
+            //Double d = Console.getDoubleInput("Enter a double.");
+
+            //Console.println("Hello" + s);
+            //Console.println("The user input %s as a integer", i);
+            //Console.println("The user input %s as a d", d);
+        }
     }
 }
