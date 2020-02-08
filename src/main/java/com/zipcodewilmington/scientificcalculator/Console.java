@@ -24,11 +24,11 @@ public class Console {
         return user;
     }
 
-    public static  Integer getIntegerInput(String prompt)
+    public static  Double getDoubleInput(String prompt)
     {
         Scanner number = new Scanner(System.in);
         println (prompt);
-        Integer num = number.nextInt();
+        Double num = number.nextDouble();
         return num;
     }
 
