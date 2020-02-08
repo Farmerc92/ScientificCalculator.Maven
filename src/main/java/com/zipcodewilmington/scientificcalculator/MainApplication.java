@@ -33,9 +33,11 @@ public class MainApplication {
             } else if (op.equals("-")) {
                 Double i1 = Console.getDoubleInput("Please next number:");
                 Console.println("New Value is:" + f.subtract(i, i1));
+                i = f.subtract(i, i1);
             } else if (op.equals("*")) {
                 Double i1 = Console.getDoubleInput("Please next number:");
                 Console.println("New Value is:" + f.multiply(i, i1));
+                i = f.multiply(i, i1);
             } else if (op.equals("/"))
             {
                 Double i1 = Console.getDoubleInput("Please next number:");
@@ -44,21 +46,29 @@ public class MainApplication {
                 }
                 else {
                     Console.println("New Value is:" + f.divide(i, i1));
+                    i = f.divide(i, i1);
                 }
             } else if (op.equals("^y")) {
                 Double i1 = Console.getDoubleInput("Please next number:");
                 Console.println("New Value is:" + f.exponent(i, i1));
+                i = f.exponent(i, i1);
 
             } else if (op.equals("^2")) {
                 Console.println("New Value is:" + f.square(i));
+                i = f.square(i);
             } else if (op.equals("sqrt")) {
                 Console.println("New Value is:" + f.root(i));
+                i = f.root(i);
             } else if (op.equals("inverse")) {
                 Console.println("New Value is:" + f.inverse(i));
+                i = f.inverse(i);
             } else if (op.equals("invert")) {
                 Console.println("New Value is:" + f.invert(i));
+                i = f.invert(i);
             } else if (op.equals("c")) {
                 Console.println("New Value is:" + f.clear());
+
+
             } else if (op.equals("end"))
             {
                   check = false;
