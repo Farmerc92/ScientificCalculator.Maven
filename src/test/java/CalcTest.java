@@ -1,7 +1,7 @@
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-        //Created by Maurice Russ on 2/2/2020  
+        //Created by Maurice Russ on 2/2/2020
 public class CalcTest {
 
     //Default constructor for class CalcTest
@@ -9,11 +9,12 @@ public class CalcTest {
 
 
     }
-    /*
-    Sets up the test fixture
-    Remember called before every test case method!!!!!
-    */
-    @Before
+
+            //
+            //Sets up the test fixture
+            //Remember called before every test case method!!!!!
+            //
+            @Before
     public void setUp(){
 
 
@@ -31,10 +32,12 @@ public class CalcTest {
 
 
     @Test
-    public void trailTest1(){
+    public void addTest1(){
+        CalcTest addTest1 = new CalcTest();
 
-
+        assertEquals("", addTest1)
     }
 
 
 }
+
