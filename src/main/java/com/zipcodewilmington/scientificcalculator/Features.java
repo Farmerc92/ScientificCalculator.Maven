@@ -15,7 +15,7 @@ public class Features{
         return a + b;
     }
 
-    public double substract(double a, double b) {
+    public double subtract(double a, double b) {
         return a - b;
     }
 
@@ -27,11 +27,11 @@ public class Features{
         return a / b;
     }
 
-    public double square(double a) {
+    public double square( double a) {
         return a * a;
     }
 
-    public double root(double a) {
+    public double root( double a) {
         return sqrt(a);
     }
 
@@ -39,17 +39,18 @@ public class Features{
         return pow(a, b);
     }
 
-    public double inverse(double a) {
+    public double inverse( double a) {
         return 1 / a;
     }
 
-    public double invert(double a) {
+    public double invert( double a) {
         return a * -1;
     }
 
     public double clear() {
         return 0;
     }
+
 
 
 }
